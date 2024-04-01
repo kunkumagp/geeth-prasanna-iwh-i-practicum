@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+    head
+        title Add Movie Information
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        .form-wrapper
+            a( href="/") << Back to movie list
+            br
+            br
+            form(method="POST")
+                label(for="movieName") Movie Name
+                input(type="text" name="movieName" required)
+                label(for="releasedYear") Year
+                input(type="text" name="releasedYear" required)
+                label(for="movieGenre") Genre
+                input(type="text" name="movieGenre" required)
+                input(type="submit" value="Submit")

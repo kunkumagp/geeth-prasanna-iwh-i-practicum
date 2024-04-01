@@ -56,3 +56,20 @@ input[type="submit"] {
     padding: .375rem 1rem;
     margin-top: 10px;
 }
+
+tr th{
+    background-color: rgb(138, 176, 233);
+    border: none;
+}
+
+td{
+    border: 1px solid;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}

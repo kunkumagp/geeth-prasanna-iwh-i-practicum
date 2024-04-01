@@ -1,0 +1,23 @@
+doctype html
+html 
+    head 
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet" href="/css/style.css")
+    body  
+        div 
+            h1(class='left') Movie Update Table 
+            a(class='right' style='margin: 1rem;' href="/") Return to the homepage
+        table(style='width:100%')
+            tr
+                th Name
+                th Year
+                th Genre
+                th 
+            each movies in data 
+                tr
+                    td #{movies.properties.name}
+                    td #{movies.properties.year} 
+                    td #{movies.properties.genres} 
+                    td 
+                        a(href="/update-cobj?ObjectId="+ movies.id) edit 

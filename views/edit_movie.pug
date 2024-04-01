@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+    head
+        title Update contact info
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        .form-wrapper
+            a( href="/movie-update") << Back to movie list
+            br
+            br
+            form(method="POST")
+                label(for="movieName") Movie Name
+                input(type="text" name="movieName" value=`${name}`)
+                label(for="releasedYear") Year 
+                input(type="text" name="releasedYear" value=`${year}`)
+                label(for="movieGenre") Genre
+                input(type="text" name="movieGenre" value=`${genre}`)
+                input(type="submit" value="Update")

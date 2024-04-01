@@ -1,0 +1,23 @@
+doctype html
+html 
+    head 
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet" href="/css/style.css")
+    body   
+        h1 Custom Object Table 
+        a(href="/add") Add / 
+        a(href="/movie-update") Update this table
+
+        br
+        br
+        table(style='width:100%')
+            tr
+                th Name
+                th Year
+                th Genre
+            each movies in data
+                tr
+                    td #{movies.properties.name}
+                    td #{movies.properties.year} 
+                    td #{movies.properties.genres} 
